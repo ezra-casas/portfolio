@@ -1,0 +1,34 @@
+
+:root{
+  --primary: #f5c000;
+  --secondary: #00b0f5;
+  --tercerary: #4500f5;
+}
+body{
+  background-color: #f5c000;
+  color: rgb(80, 84, 96);
+  height: 100vh;
+}
+ion-icon{
+	color:rgb(80, 84, 96);
+}
+.column{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: var(--tercerary);
+
+}
+.box{
+	color: white;
+	background-color: var(--secondary);
+
+}
+a{
+  text-decoration: none;
+  color: rgb(80, 84, 96);
+}
+.navbar{
+  background-color: var(--primary);
+}
+
