@@ -1,18 +1,31 @@
 interface CreateBoxProps {
-  project: string;
+  projectName: string;
   key: number;
   id: string;
+  description?: string;
+  show?: string;
 }
 
 function handleClick(event: React.MouseEvent<HTMLElement>) {
-  const element = event.target as HTMLElement;
-  console.log(element.id);
+  const currentDiv = (event.target as HTMLElement)?.id;
+  if (currentDiv === "kanaking") {
+    console.log("pass");
+    window.location.href = "https://kanaking.app";
+  } else if (currentDiv === "keepassxc") {
+    window.location.href = "https://github.com/ezra-casas/keepassxc-react";
+  }
 }
 
-export function CreateBox({ project, id }: CreateBoxProps) {
+export function CreateBox({
+  projectName,
+  id,
+  description,
+  show,
+}: CreateBoxProps) {
   return (
     <div className="box" id={id} onClick={handleClick}>
-      <h2>{project}</h2>
+      <h2>{projectName}</h2>
+      <p style={{ display: `${show}` }}>{description}</p>
     </div>
   );
 }
