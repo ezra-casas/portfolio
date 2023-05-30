@@ -21,8 +21,27 @@ footer div:hover{
     color:rgb(26, 49, 47);
     transition: background-color 0.3s ease-in;
 }
+footer div:hover .text{
+    display: none;
+}
+footer div:hover .icon{
+    display: contents;
+}
+.icon{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 footer a{
     text-decoration: none;
     color: white;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#contact:hover{
+    cursor: pointer;
 }

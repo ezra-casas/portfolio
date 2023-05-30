@@ -1,7 +1,6 @@
 .hero-container{
     width: 100%;
     height: 100%;
-    padding: 0.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,4 +15,18 @@
     gap: 2rem;
     justify-content: space-around;
     width: 100%;
+}
+
+.hero-container .top{
+    display: flex;
+    justify-content: space-between;
+}
+.dark-light{
+    padding: 1rem;   
+}
+.dark-light span{
+    cursor: pointer;
+}
+.moon{
+    display: none;
 }
