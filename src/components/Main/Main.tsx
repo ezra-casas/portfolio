@@ -10,7 +10,7 @@ export default function Main() {
           projectName="KeePassXC"
           key={2}
           id="keepassxc"
-          description="Links to GitHub"
+          description="Links to source code in GitHub"
         />
       </section>
     </main>

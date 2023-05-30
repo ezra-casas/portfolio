@@ -7,8 +7,12 @@ export default function Footer() {
       <div id="contact">
         <ContactModal />
       </div>
-      <div id="github">GitHub</div>
-      <div id="linkedin">LinkedIn</div>
+      <a href="https://www.github.com/ezra-casas">
+        <div id="github">GitHub</div>
+      </a>
+      <a href="https://www.linkedin.com/in/ezra-casas">
+        <div id="linkedin">LinkedIn</div>
+      </a>
     </footer>
   );
 }
